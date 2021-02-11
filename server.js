@@ -5,12 +5,14 @@ const express = require("express")
 const app = express()
 
 // Import Local depandencies
+const mongoConnect = require("./configs/mongoDB")
 
 // Defile buildin middlewares
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Connect to MongoDB
+mongoConnect()
 
 // Calling the routers
 
