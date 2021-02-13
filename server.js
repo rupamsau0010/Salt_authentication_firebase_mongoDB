@@ -6,6 +6,7 @@ const app = express()
 
 // Import Local depandencies
 const mongoConnect = require("./configs/mongoDB")
+// const generalUserEntry = require("./temp/generalUserEntry")
 
 // Defile buildin middlewares
 app.use(express.json())
@@ -15,6 +16,8 @@ app.use(express.urlencoded({ extended: true }))
 mongoConnect()
 
 // Calling the routers
+// GeneralUserEntry
+// generalUserEntry()
 
 
 // Running the server on port 5000
